@@ -348,21 +348,7 @@ Assistant`);
           <p className="text-lg text-gray-600">
             Transform your casual Arabic text into professional English emails that sound human-written
           </p>
-          <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-            <div className="space-y-2">
-              <a
-                href="https://mailing-writer.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center text-sm text-blue-600 font-medium border border-blue-300 hover:bg-blue-50 w-full px-4 py-2 rounded-lg"
-              >
-                🌐 Open Mailing Writer Website
-              </a>
-              <p className="text-xs text-gray-500">
-                Share this professional email converter with your friends and colleagues!
-              </p>
-            </div>
-          </div>
+          
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
@@ -550,10 +536,10 @@ Assistant`);
                 <>
                   {/* AI Detection Results */}
                   {(aiScore !== null || humanScore !== null || isAnalyzing) && (
-                    <div className="p-4 bg-yellow-50 rounded-lg space-y-3">
-                      <h4 className="font-semibold text-gray-900">🎯 Humanization Analysis</h4>
+                    <div className="p-4 bg-accent rounded-lg space-y-3">
+                      <h4 className="font-semibold text-accent-foreground">🎯 Humanization Analysis</h4>
                       {isAnalyzing ? (
-                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <div className="animate-spin">⚙️</div>
                           Analyzing text for human-like quality...
                         </div>
@@ -561,7 +547,7 @@ Assistant`);
                         <div className="grid grid-cols-2 gap-4 text-sm">
                           {aiScore !== null && (
                             <div className="space-y-1">
-                              <div className="text-gray-600">Initial AI Score:</div>
+                              <div className="text-muted-foreground">Initial AI Score:</div>
                               <div className={`font-semibold ${aiScore > 70 ? 'text-destructive' : aiScore > 40 ? 'text-yellow-600' : 'text-green-600'}`}>
                                 {Math.round(aiScore)}% AI-like
                               </div>
@@ -569,7 +555,7 @@ Assistant`);
                           )}
                           {humanScore !== null && (
                             <div className="space-y-1">
-                              <div className="text-gray-600">After Humanization:</div>
+                              <div className="text-muted-foreground">After Humanization:</div>
                               <div className={`font-semibold ${humanScore > 70 ? 'text-destructive' : humanScore > 40 ? 'text-yellow-600' : 'text-green-600'}`}>
                                 {Math.round(humanScore)}% AI-like
                               </div>
@@ -578,7 +564,7 @@ Assistant`);
                         </div>
                       )}
                       {aiScore !== null && humanScore !== null && (
-                        <div className="text-sm text-blue-600 font-medium">
+                        <div className="text-sm text-primary font-medium">
                           ✨ Improvement: {Math.round(aiScore - humanScore)}% more human-like
                         </div>
                       )}
@@ -613,8 +599,8 @@ Assistant`);
           <div>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold mb-2 text-blue-600">Steps to Use:</h4>
-                <ol className="space-y-1 text-sm text-gray-600 list-decimal list-inside">
+                <h4 className="font-semibold mb-2 text-primary">Steps to Use:</h4>
+                <ol className="space-y-1 text-sm text-muted-foreground list-decimal list-inside">
                   <li>Write your text in Arabic in the left box</li>
                   <li>Choose the appropriate tone, formality level, and purpose</li>
                   <li>Click "Convert to Professional Email"</li>
@@ -623,8 +609,8 @@ Assistant`);
                 </ol>
               </div>
               <div>
-                <h4 className="font-semibold mb-2 text-blue-600">Email Converter Features:</h4>
-                <ul className="space-y-1 text-sm text-gray-600 list-disc list-inside">
+                <h4 className="font-semibold mb-2 text-primary">Email Converter Features:</h4>
+                <ul className="space-y-1 text-sm text-muted-foreground list-disc list-inside">
                   <li>Multiple email structures (Six Sigma, Storytelling, Executive, Action-oriented)</li>
                   <li>Adjustable humanity level (90-99%)</li>
                   <li>AI-to-Human text transformation</li>
