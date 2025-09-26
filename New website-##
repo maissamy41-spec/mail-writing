@@ -1,3 +1,10 @@
+builder>>>>🔄 **Code Edit Mode** - Processing your edit request...
+
+
+
+📄 **Original code (no changes applied):**
+
+```tsx
 "use client";
 
 import { useState } from 'react';
@@ -663,3 +670,4 @@ Provide a professional, well-structured English email body only that maintains t
     </div>
   );
 }
+```
